@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeedForward</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><h2>FeedForward</h2></div>
+    <nav>
+      <ul>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <main id="login-section">
+    <section class="hero">
+      <h1>Welcome</h1>
+      <p>Please login to continue</p>
+
+      <form class="login-form" id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <!-- Domain Selection -->
+        <select id="domain" required>
+          <option value="" disabled selected>Select your role</option>
+          <option value="Donor">Donor</option>
+          <option value="Volunteer">Volunteer</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Role-Specific Pages -->
+  <section id="role-page" style="display: none;">
+    <h1 id="role-title"></h1>
+    <p id="role-message"></p>
+  </section>
+
+ <script src="script1.js"></script>
+
+</body>
+</html>
